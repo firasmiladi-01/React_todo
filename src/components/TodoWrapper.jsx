@@ -111,7 +111,7 @@ export const TodoWrapper = () => {
     <Box className="TodoWrapper">
       <TodoForm addTodo={addTodo} addTodoToDataBase={addTodoToDataBase} />
       <List>
-        {todos.reverse().map((todo) => {
+        {todos.slice().reverse().map((todo) => {
           return todo.isEditing ? (
             <EditTodoForm editTodo={editTodo} key={todo.id} todo={todo} />
           ) : (

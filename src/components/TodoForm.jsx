@@ -22,7 +22,6 @@ export const TodoForm = (props) => {
       <Input
         id="filled-basic"
         placeholder="What is the task today ?"
-        info
         value={value}
         onChange={handleChange}
        className="todo-input"
